@@ -6,12 +6,17 @@
 }
 
 body{
-    height: 5500px;
+    /* height: 5500px; */
     font-family: 'Lato', sans-serif;
 }
 img{
     width: 100%;
     height: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+
 }
 /* major fixes ends here  */
 
@@ -79,6 +84,12 @@ header{
     border: 2px solid var(--main-color)
 }
 
+.desktop-links-container  ul a{
+    padding: 15px 20;
+
+
+}
+
 .nav-mobile{
     display: none;
     justify-content: space-between;
@@ -104,6 +115,7 @@ height: 30px;
 width: 30px;
 display: flex;
 align-items: center;
+z-index: 100;
 }
 .mobile-logo{
     border: 2px solid var(--white-color);
@@ -117,7 +129,7 @@ align-items: center;
 }
 .menu::before{
     content: "";
-    background: tomato;
+    background: var(--white-color);
     width: 100%;
     height: 3px;
     position: absolute;
@@ -126,7 +138,7 @@ align-items: center;
 }
 .menu::after{
     content: "";
-    background: black;
+    background: var(--white-color);
     width: 100%;
     height: 3px;
     position: absolute;
@@ -138,14 +150,64 @@ align-items: center;
 }
 .showhamburger .menu::before{
     transform: rotate(45deg);
+    background: var(--main-color);
 }
 .showhamburger .menu::after{
     transform: rotate(-45deg);
+    background: var(--main-color);
 }
 
 /* header section ends here  */
 
+/* hamburger-menu edition starts */
+.mobile-links-container{
+    transform: translateX(102%);
+    transition: all 0.4s ease;
+    width: 50%;
+    height: 100%;
+    background: var(--main-color);
+    position:fixed;
+    right: 0;
+    top:0;
+    z-index: 3;
+}
+.mobile-links-contents ul{
+    list-style: none;
+    
+    
+}
+.mobile-links-contents a{
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 22px 20px;
+}
+.showmobilelinks{
+    /* display: block; */
+    transform: translateX(0);
+}
 
+
+
+
+
+
+.mobile-links-contents a:hover{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+.mobile-links-contents button{
+    margin: 0 0 0 20px;
+    background: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.mobile-links-contents .active-link{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+/* hamburger-menu edition starts */
 
 /* header banner section starts here  */
 .headerbanner-section{
@@ -435,6 +497,7 @@ footer {
 .footer-copyright {
     color: var(--white-color);
     align-self: center;
+    justify-content: center;
 }
 
 .footer-icon__holder {

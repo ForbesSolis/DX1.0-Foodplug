@@ -20,12 +20,12 @@
                 <i class="fa-regular fa-hand-lizard"></i>
             </div>
         <div class="desktop-linkcontainer">   
-        <ul>
-            <li>HOME</li>
-            <li>ABOUT US</li>
-            <li>EXPLORE FOODS</li>
-            <li>FAQ</li>
-        </ul>
+            <ul>
+                <li><a href="#" >HOME</a></li>
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#explorefoods">EXPLORE FOODS</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
 
         <button class="btn btn-red">+1(000) XXX-XXXX</button>
     </div>
@@ -38,11 +38,29 @@
             </div>
             <div class="hamburger-container" onclick="addandremove()">
                 <div class="menu"></div>
-            </div>
+                
+            </div><div class="mobile-links-container">
+
+                    <div class="mobile-links-contents">   
+                        <ul>
+                            <li><a href="#" class="active-link">HOME</a></li>
+                            <li><a href="#aboutus">ABOUT US</a></li>
+                            <li><a href="#explorefoods">EXPLORE FOODS</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                        <button class="btn btn-red">+1(000) XXX-XXXX</button>
+                    </div>
+                
+                 </div>
         </nav>
     </header>
 
-    <main>
+ <!-- hamburger menu edition starts -->
+
+    
+
+ <!-- hamburger menu edition ends -->
+ <main>
         <!-- header banner section starts here  -->
         <div class="headerbanner-section">
             <div class="banner-content-container">
@@ -79,7 +97,7 @@
         <!-- header counter section ends here -->
 
         <!-- about us section starts here  -->
-        <div class="about-us">
+        <div class="about-us" id="aboutus">
             <div class="about-us-container">
                 <div class="about-us-cards-img"><img src="./img/about1.png" alt=""></div>
                 <div class="about-us-cards-text">
@@ -120,7 +138,7 @@
         <!-- wave button section ends here  -->
 
         <!-- explore food section starts here  -->
-        <div class="explore-food-section">
+        <div class="explore-food-section" id="explorefoods">
             <h2>Explore Our Foods</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse culpa, ipsam consequuntur adipisci tenetur architecto dicta necessitatibus voluptatibus aperiam eum vel voluptate dolorum quas? Minima in quasi possimus eius blanditiis? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse culpa, ipsam consequuntur adipisci tenetur architecto dicta necessitatibus voluptatibus aperiam eum vel voluptate dolorum quas? Minima in quasi possimus eius blanditiis?</p>
 
@@ -164,7 +182,7 @@
 
 
         <!-- faq section starts here  -->
-        <div class="faq-section">
+        <div class="faq-section" id="faq">
             <h2>Frequently Asked Questions</h2>
             <div class="faq-container">
                 <div class="faq-item">
@@ -214,7 +232,7 @@
     <!-- Footer section starts here-->
     <footer>
         <div class="footer-copyright">
-            <p>&2022 Foodplug, built by Omotayo-Abayomi-Victor at DX1.0 Bootcamp</p>
+    <p>&copy;2022 Foodplug, built by Omotayo-Abayomi-Victor <br> at DX1.0 Bootcamp </p>
         </div>
 
         <div class="footer-icon__holder">
